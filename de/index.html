@@ -1,0 +1,119 @@
+---
+layout: default_style
+permalink: /
+reference: home
+---
+
+{% if page.lang == site.default_lang %}
+{% assign append = "" %}
+{% else %}
+{% assign append = site.data.locales[page.lang].append %}
+{% endif %}
+
+<!-- Begin #carousel-section-home -->
+<section id="carousel-section-home">
+    <div id="carousel-home" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carousel-home" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carousel-home" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carousel-home" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="{{ site.url }}{{ site.baseurl }}/assets/img/korex/background_banner1.jpg"
+                    class="d-block w-100" alt="baumanagement">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="{{ site.url }}{{ site.baseurl }}/assets/img/korex/background_banner2.jpg"
+                    class="d-block w-100" alt="projectmamanagement">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="{{ site.url }}{{ site.baseurl }}/assets/img/korex/background_banner3.jpg"
+                    class="d-block w-100" alt="projectmamanagement">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-home" data-bs-slide="prev">
+            <span class="fa-solid fa-angles-left fa-3x" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel-home" data-bs-slide="next">
+            <span class="fa-solid fa-angles-right fa-3x" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</section>
+<!-- End #carousel-section-home -->
+
+<!-- Begin #profile-section -->
+<section id="profile" class="section-wrapper">
+    <!-- Begin Main Container -->
+    <div class="container">
+        <!-- Begin Feature Row-->
+        <div class="row">
+            <div class="content-block">
+                <div class="content-block-title">
+                    {{ site.data.locales[page.lang].about }}
+                </div>
+                <div class="row text-start content-block-body">
+                    <div class="col-md-12">
+                        {{ site.data.locales[page.lang].about_us_text }}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Feature Row -->
+        <!-- Begin Feature Row-->
+        <div class="row">
+            <div class="content-block">
+                <div class="content-block-title">
+                    {{ site.data.locales[page.lang].motivation }}
+                </div>
+                <div class="row text-start content-block-body">
+                    <div class="col-md-12">
+                        {{ site.data.locales[page.lang].motivation_text }}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Feature Row -->
+        <!-- Begin Feature Row-->
+        <div class="row">
+            <div class="content-block">
+                <div class="content-block-title">
+                    {{ site.data.locales[page.lang].vision }}
+                </div>
+                <div class="row text-start content-block-body">
+                    <div class="col-md-12">
+                        {{ site.data.locales[page.lang].vision_text }}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Feature Row -->
+        <!-- Start Product Query Row -->
+        <div class="row" id="product-query">
+            <div class="content-block product-query-text">
+                <p>{{ site.data.locales[page.lang].query_text_1 }}</p>
+                <p>{{ site.data.locales[page.lang].query_text_2 }}</p>
+                <a class="btn btn-primary" href="{{ site.url }}{{ site.baseurl }}/contact#contact_form">{{
+                    site.data.locales[page.lang].query_text_3 }}</a>
+            </div>
+        </div>
+        <!-- End Product Query Row -->
+    </div>
+    <!-- End Main Container -->
+</section>
+<!-- End #services-section -->
+<!-- Begin #interactive image section-->
+<!-- TODO 
+<div class="container">
+<p><strong>TODO: </strong>Update pictures, layout, texts</p>
+</div>
+-->

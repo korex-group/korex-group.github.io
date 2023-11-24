@@ -1,0 +1,77 @@
+<!-- BEGIN Scripts -->
+<script type="text/javascript" src="{{ site.url }}{{ site.baseurl }}/assets/js/jquery-3.6.0.js"></script>
+<script src="{{ site.url }}{{ site.baseurl }}/assets/bootstrap/js/bootstrap.bundle.js"></script>
+<!-- MDB -->
+<script type="text/javascript" src="{{ site.url }}{{ site.baseurl }}/assets/mdb-ui-kit/js/mdb.min.js"></script>
+<!-- Cookie Consent -->
+<script src="{{ site.url }}{{ site.baseurl }}/assets/js/cookieconsent.js"></script>
+<script src="{{ site.url }}{{ site.baseurl }}/assets/js/cookieconsent-init.js"></script>
+<!-- Update active-->
+<script>
+  $(function ($) {
+    let url = window.location.href;
+    $("li a:not('.dropdown-item')").each(function () {
+      if (this.href === url.replace(/\/+$/, '') || this.href === url || this.href == url.split('#')[0]) {
+        $(this).closest('li').addClass('active');
+      }
+    });
+  });
+</script>
+<!-- interactive image with click
+<script>
+jQuery(function($) {
+  var pop = $('.map-popup');
+  pop.click(function(e) {
+    e.stopPropagation();
+  });
+  
+  $('a.marker').click(function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    $(this).next('.map-popup').toggleClass('open');
+    $(this).parent().siblings().children('.map-popup').removeClass('open');
+  });
+  
+  $(document).click(function() {
+    pop.removeClass('open');
+  });
+  
+  pop.each(function() {
+    var w = $(window).outerWidth(),
+        edge = Math.round( ($(this).offset().left) + ($(this).outerWidth()) );
+    if( w < edge ) {
+      $(this).addClass('edge');
+    }
+  });
+});
+</script>
+-->
+<!-- interactive image with mouseover-->
+<script>
+jQuery(function($) {
+  var pop = $('.map-popup');
+  pop.on('click mouseover', function(e) {
+    e.stopPropagation();
+  });
+  
+  $('a.marker').on('click mouseover', function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    $(this).next('.map-popup').toggleClass('open');
+    $(this).parent().siblings().children('.map-popup').removeClass('open');
+  });
+  
+  $(document).on('click mouseover',function() {
+    pop.removeClass('open');
+  });
+  
+  pop.each(function() {
+    var w = $(window).outerWidth(),
+        edge = Math.round( ($(this).offset().left) + ($(this).outerWidth()) );
+    if( w < edge ) {
+      $(this).addClass('edge');
+    }
+  });
+});
+</script>
+<!-- End Scripts -->

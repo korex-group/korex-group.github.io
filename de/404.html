@@ -1,0 +1,32 @@
+---
+layout: default_style
+permalink: /404.html
+reference: 404
+---
+
+<style type="text/css" media="screen">
+    .container {
+        text-align: center;
+    }
+
+    h1 {
+        margin: 30px 0;
+        font-size: 4em;
+        line-height: 1;
+        letter-spacing: -1px;
+    }
+</style>
+
+<div class="container">
+    <h1>404</h1>
+
+    <p><strong>Seite nicht gefunden :(</strong></p>
+    <p>Die angeforderte Seite konnte nicht gefunden werden.</p>
+    {% assign node = site.pages | where: "reference", "home" %}
+    {% for item in node %}
+    {% if item.lang == page.lang %}
+    {% assign page_home = item %}
+    {% endif %}
+    {% endfor %}
+    <p>Rückkehr zur <a href="{{ page_home.url }}">{{ site.data.locales[page.lang].home }}</a>.</p>
+</div>

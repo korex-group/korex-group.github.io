@@ -1,0 +1,161 @@
+---
+layout: default_style
+permalink: /contact
+published: true
+reference: contact
+---
+<!-- Main Container -->
+<!-- Disable Google Maps
+<section id="map-banner">
+  <div class="map-banner">
+    <iframe id="googlemap" width="100%" height="400px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+      src=""></iframe>
+    <br />
+  </div>
+</section>
+-->
+<!-- Main Container -->
+<!-- Disable Google Maps
+<section id="map-banner">
+  <div class="map-banner">
+    <iframe id="googlemap" width="100%" height="400px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+      src=""></iframe>
+    <br />
+  </div>
+</section>
+-->
+<!-- Begin #carousel-section-products -->
+<section id="carousel-section-contact">
+  <div id="carousel-products" class="carousel slide" data-bs-ride="false">
+    <!--
+    <div class="carousel-indicators"> <button type="button" data-bs-target="#carousel-products" data-bs-slide-to="0"
+        class="active" aria-current="true" aria-label="Slide 1"></button> <button type="button"
+        data-bs-target="#carousel-products" data-bs-slide-to="1" aria-label="Slide 2"></button> <button type="button"
+        data-bs-target="#carousel-products" data-bs-slide-to="2" aria-label="Slide 3"></button> 
+    </div>
+    -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{{ site.url }}{{ site.baseurl }}/assets/img/korex/background_banner1.jpg" class="d-block w-100"
+          alt="slide-1">
+      </div>
+      <!--
+      <div class="carousel-item"> <img src="{{ site.url }}{{ site.baseurl }}/assets/img/slider/alcides/slide2.jpeg"
+          class="d-block w-100" alt="slide-2">
+        <div class="carousel-caption d-none d-md-block">
+          <p class="carousel-title">Second slide label</p>
+          <p>Some representative placeholder content for the second slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item"> <img src="{{ site.url }}{{ site.baseurl }}/assets/img/slider/alcides/slide3.jpeg"
+          class="d-block w-100" alt="slide-3">
+        <div class="carousel-caption d-none d-md-block">
+          <p class="carousel-title">Third slide label</p>
+          <p>Some representative placeholder content for the third slide.</p>
+        </div>
+      </div>
+      -->
+    </div>
+    <!--
+    <button class="carousel-control-prev" type="button" data-bs-target="#carousel-products" data-bs-slide="prev">
+      <span class="fa-solid fa-angles-left fa-3x" aria-hidden="true"></span> <span
+        class="visually-hidden">Previous</span> </button> <button class="carousel-control-next" type="button"
+      data-bs-target="#carousel-products" data-bs-slide="next"> <span class="fa-solid fa-angles-right fa-3x"
+        aria-hidden="true"></span> <span class="visually-hidden">Next</span> 
+    </button>
+    -->
+  </div>
+</section> 
+<!-- End #carousel-section-contact -->
+<section id="contact-section" class="section-wrapper">
+  <!-- Begin Main Container -->
+  <div class="container">
+    <!-- Begin Main Row -->
+    <div class="row">
+      <!-- Begin Col Find-us -->
+      <div class="col-lg-4 contact-block">
+        <h3>{{ site.data.locales[page.lang].find_us_at }}</h3>
+        <em>
+          <p><strong>KOREX Group</strong></p>
+          <p>Hohenzollernallee 31</p>
+          <p>40235 Düsseldorf</p>
+          <p>Deutschland</p>
+        </em>
+        <p>{{ site.data.locales[page.lang].phone }}: 0049 (0) 12345</p>
+        <p>{{ site.data.locales[page.lang].fax }}: 0049 (0) 12345</p>
+        <p><em><strong>{{ site.data.locales[page.lang].email }}: info@korex.group</strong></em></p>
+        <br>
+      </div>
+      <!-- End Col Find-us -->
+
+      <!-- Begin Col Contact Form -->
+      <div class="col-lg-8 contact-block" id="contact_form">
+        <h3>{{ site.data.locales[page.lang].contact_form }}</h3>
+        <form action="https://api.web3forms.com/submit" method="POST" class="needs-validation">
+          <input type="hidden" name="access_key" value="xxxx">
+          <fieldset>
+            <div class="form-group">
+              <label for="name" class="control-label">{{ site.data.locales[page.lang].name }} *</label>
+              <input type="text" class="form-control" id="name" name="name"
+                placeholder="{{ site.data.locales[page.lang].placeholder_name }}" required>
+            </div>
+            <div class="form-group">
+              <label for="company" class="control-label">{{ site.data.locales[page.lang].company | capitalize }}
+                *</label>
+              <input type="text" class="form-control" id="company" name="company"
+                placeholder="{{ site.data.locales[page.lang].placeholder_company }}" required>
+            </div>
+            <div class="form-group">
+              <label class="control-label" for="phone">{{ site.data.locales[page.lang].phone_number }}</label>
+              <input type="tel" class="form-control" name="phone" id="phone"
+                placeholder="{{ site.data.locales[page.lang].placeholder_phone_number }}">
+            </div>
+            <div class="form-group">
+              <label class="control-label" for="email">{{ site.data.locales[page.lang].email }} *</label>
+              <input type="email" class="form-control" name="email" id="email"
+                placeholder="{{ site.data.locales[page.lang].placeholder_email }}" required>
+            </div>
+            <div class="form-group">
+              <label class="control-label" for="message">{{ site.data.locales[page.lang].message }} *</label>
+              <textarea class="form-control" name="message" id="message" rows="3"
+                placeholder="{{ site.data.locales[page.lang].placeholder_message }}"></textarea>
+            </div>
+            <!-- Find the imprint and privacy policy-->
+            {% assign node = site.pages | where: "lang", page.lang %}
+            {% for item in node %}
+            {% if item.reference == "imprint" %}
+            {% assign page_imprint = item %}
+            {% endif %}
+            {% if item.reference == "privacy_policy" %}
+            {% assign page_privacy_policy = item %}
+            {% endif %}
+            {% if item.reference == "thanks" %}
+            {% assign page_thanks = item %}
+            {% endif %}
+            {% endfor %}
+            <div class="form-check form-group">
+              <input class="form-check-input" type="checkbox" value="" id="agreement" required>
+              <label class="form-check-label" for="agreement">
+                {{ site.data.locales[page.lang].contact_form_agreement_1}} <a href="{{ page_imprint.url }}">{{
+                  site.data.locales[page.lang].contact_form_agreement_2 }}</a> {{
+                site.data.locales[page.lang].contact_form_agreement_3 }} <a href="{{ page_privacy_policy.url }}">{{
+                  site.data.locales[page.lang].contact_form_agreement_4}}</a>{{ site.data.locales[page.lang].contact_form_agreement_5 }}
+              </label>
+            </div>
+            <div class="form-comment">
+              <p>{{ site.data.locales[page.lang].contact_form_comments }}</p>
+            </div>
+            <button type="submit" class="btn btn-primary">Absenden</button>
+            <input type="hidden" name="redirect" value="{{ site.url }}{{ site.baseurl }}{{ page_thanks.url }}">
+            <input type="hidden" name="from_name" value="KOREX Contact Form">
+            <input type="hidden" name="subject" value="Neues Kontaktformular der KOREX Website">
+          </fieldset>
+        </form>
+      </div>
+      <!-- Begin Col Contact Form -->
+    </div>
+    <!-- End Main Row -->
+  </div>
+  <!-- End Main Container -->
+</section>
+<!--End Main Section -->

@@ -1,0 +1,74 @@
+---
+layout: default_style
+permalink: /en/services
+published: true
+reference: services
+---
+
+<!-- Begin #carousel-section-home -->
+<section id="carousel-section-home">
+  <div id="carousel-home" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carousel-home" data-bs-slide-to="0" class="active" aria-current="true"
+        aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carousel-home" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{{ site.url }}{{ site.baseurl }}/assets/img/korex/background_banner4.jpg" class="d-block w-100"
+          alt="baumanagement">
+        <div class="carousel-caption d-none d-md-block">
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="{{ site.url }}{{ site.baseurl }}/assets/img/korex/background_banner5.jpg" class="d-block w-100"
+          alt="projectmamanagement">
+        <div class="carousel-caption d-none d-md-block">
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carousel-home" data-bs-slide="prev">
+      <span class="fa-solid fa-angles-left fa-3x" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carousel-home" data-bs-slide="next">
+      <span class="fa-solid fa-angles-right fa-3x" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</section>
+<!-- End #carousel-section-home -->
+
+<!-- Begin #company-section -->
+<section id="solutions" class="section-wrapper">
+  <div class="container">
+    <!-- Begin Feature Row-->
+    <div class="row">
+      <div class="content-block">
+        <div class="content-block-title">
+          Unsere Leistungen
+        </div>
+        <div class="row text-start content-block-body">
+          <div class="col-md-12">
+            {{ site.data.locales[page.lang].services_text | markdownify }}
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Feature Row -->
+    <!-- Start Product Query Row -->
+    <div class="row" id="product-query">
+      <div class="content-block product-query-text">
+        {{ site.data.locales[page.lang].services_summary | markdownify }}
+        <a class="btn btn-primary" href="{{ site.url }}{{ site.baseurl }}/contact#contact_form">{{
+          site.data.locales[page.lang].query_text_3 }}</a>
+      </div>
+    </div>
+    <!-- End Product Query Row -->
+</section>
+<!-- End Products Section-->
+<!--
+<div class=" container">
+  <p><strong>TODO: </strong>Update pictures, layout, texts</p>
+</div>
+-->

@@ -1,0 +1,160 @@
+<!-- Header -->
+<nav id="navbar-section" class="navbar navbar-expand-lg navbar-light bg-light sticky-top" role="navigation">
+
+    <div class="container-fluid">
+        <a class="navbar-brand" href="{{ site.url }}{{ site.baseurl }}/"><img class="logo"
+                src="{{ site.url }}{{ site.baseurl }}/assets/img/korex/logo.svg" alt="Korex"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars fa-2x"></i>
+        </button>
+
+        {% if page.lang == site.default_lang %}
+        {% assign append = "" %}
+        {% else %}
+        {% assign append = site.data.locales[page.lang].append %}
+        {% endif %}
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav nav-pills ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="{{ site.url }}{{ site.baseurl }}{{ append }}">{{
+                        site.data.locales[page.lang].home }}</a>
+                </li>
+                <!--
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ site.url }}{{ site.baseurl }}{{ append }}/software">{{
+                        site.data.locales[page.lang].software }}</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ site.url }}{{ site.baseurl }}{{ append }}/products">{{
+                        site.data.locales[page.lang].products }}</a>
+                -->
+                <!-- Products dropdown -->
+                <!--
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="{{ site.url }}{{ site.baseurl }}{{ append }}/products"
+                        id="navbarProductDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        {{ site.data.locales[page.lang].products }}
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarProductDropdown">
+                        <li><a class="dropdown-item"
+                                href="{{ site.url }}{{ site.baseurl }}{{ append }}/products#{{ site.data.locales[page.lang].marker_1.title }}">
+                                {{ site.data.locales[page.lang].marker_1.title }}</a></li>
+                        <li><a class="dropdown-item"
+                                href="{{ site.url }}{{ site.baseurl }}{{ append }}/products#{{ site.data.locales[page.lang].marker_2.title }}">
+                                {{ site.data.locales[page.lang].marker_2.title }}</a></li>
+                        <li><a class="dropdown-item"
+                                href="{{ site.url }}{{ site.baseurl }}{{ append }}/products#{{ site.data.locales[page.lang].marker_3.title }}">
+                                {{ site.data.locales[page.lang].marker_3.title }}</a></li>
+                        <li><a class="dropdown-item"
+                                href="{{ site.url }}{{ site.baseurl }}{{ append }}/products#{{ site.data.locales[page.lang].marker_4.title }}">
+                                {{ site.data.locales[page.lang].marker_4.title }}</a></li>
+                        <li><a class="dropdown-item"
+                                href="{{ site.url }}{{ site.baseurl }}{{ append }}/products#{{ site.data.locales[page.lang].marker_5.title }}">
+                                {{ site.data.locales[page.lang].marker_5.title }}</a></li>
+                        <li><a class="dropdown-item"
+                                href="{{ site.url }}{{ site.baseurl }}{{ append }}/products#{{ site.data.locales[page.lang].marker_6.title }}">
+                                {{ site.data.locales[page.lang].marker_6.title }}</a></li>
+                    </ul>
+                </li>
+                -->
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ site.url }}{{ site.baseurl }}{{ append }}/services"> {{
+                        site.data.locales[page.lang].services }}</a>
+                </li>
+                <!--
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ site.url }}{{ site.baseurl }}{{ append }}/blog"> {{
+                        site.data.locales[page.lang].blog }}</a>
+                </li>
+                -->
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ site.url }}{{ site.baseurl }}{{ append }}/about">{{
+                        site.data.locales[page.lang].about }}</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ site.url }}{{ site.baseurl }}{{ append }}/contact">{{
+                        site.data.locales[page.lang].contact }}</a>
+                </li>
+                <!-- Dropdown language selector
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle dropdown-item" href="{{ site.url }}{{ site.baseurl }}{{ append }}"
+                        id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        <i class="flag flag-{{ site.data.locales[page.lang].flag }}"></i> {{ page.lang }}
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        {% for lang in site.languages %}
+                        {% if lang != page.lang %}
+                        {% if lang == site.default_lang %}
+                            {% assign append = "" %}
+                        {% else %}
+                            {% assign append = site.data.locales[lang].append %}
+                        {% endif %}
+                        <li><a class="dropdown-item" href="{{ site.url }}{{ site.baseurl }}{{ append }}"><i
+                                    class="flag flag-{{ site.data.locales[lang].flag }}"></i>{{ lang | upcase }}</a></li>
+                        {% endif %}
+                        {% endfor %}
+                    </ul>
+                </li>
+                -->
+                {%- if site.pages %}
+                <li class="nav-item dropdown">
+                    {%- assign node = site.pages | where: "reference", page.reference | sort: 'lang' %}
+                    {%- for item in node %}
+                    {%- if page.lang == item.lang %}
+                    <a class="nav-link dropdown-toggle dropdown-item" href="{{ item.url }}" id="navbarLangSelector"
+                        role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="flag flag-{{ site.data.locales[page.lang].flag }}"></i> {{ page.lang }}
+                    </a>
+                    {%- endif %}
+                    {%- endfor %}
+
+                    <ul class="dropdown-menu" aria-labelledby="navbarLangSelector">
+                        {%- for item in node %}
+                        {%- if page.lang != item.lang %}
+                        <li><a class="dropdown-item" href="{{ item.url }}"><i
+                                    class="flag flag-{{ site.data.locales[item.lang].flag }}"></i>{{ item.lang | upcase
+                                }}</a></li>
+                        {%- endif %}
+                        {%- endfor %}
+                    </ul>
+                </li>
+                {%- endif %}
+                {%- if site.documents %}
+                <li class="nav-item dropdown">
+                    {%- assign node = site.documents | where: "reference", page.reference | sort: 'lang' %}
+                    {%- for item in node %}
+                    {%- if page.lang == item.lang %}
+                    <a class="nav-link dropdown-toggle dropdown-item" href=" {{ item.url }}" id="navbarLangSelector"
+                        role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="flag flag-{{ site.data.locales[page.lang].flag }}"></i> {{ page.lang }}
+                    </a>
+                    {%- endif %}
+                    {%- endfor %}
+
+                    <ul class="dropdown-menu" aria-labelledby="navbarLangSelector">
+                        {%- for item in node %}
+                        {%- if page.lang != item.lang %}
+                        <li><a class="dropdown-item" href="{{ item.url }}"><i
+                                    class="flag flag-{{ site.data.locales[item.lang].flag }}"></i>{{ item.lang | upcase
+                                }}</a></li>
+                        {%- endif %}
+                        {%- endfor %}
+                    </ul>
+                </li>
+                {%- endif %}
+            </ul>
+            <!-- Search bar -->
+            <!--
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+      -->
+        </div>
+    </div>
+</nav>
+
+<!-- End Header -->

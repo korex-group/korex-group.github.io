@@ -1,0 +1,73 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: KOREX
+email: info@korex.group
+description: > # this means to ignore newlines until "baseurl:"
+  KOREX - Baumanangement und Projektmanagement richting gemacht
+
+# url: "https://rheintech-energy.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://korex-group.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: # the subpath of your site, e.g. /blog
+
+# Company Information
+company_name: KOREX Group
+address_line: Hohenzollernallee 31, Düsseldorf, Germany
+telephone_number: 
+fax_number: 
+company_email: info@korex.group
+google_map: https://www.google.com/maps/place/Hohenzollernallee+31,+40235+D%C3%BCsseldorf/@51.233007,6.8238783,17z/data=!3m1!4b1!4m6!3m5!1s0x47b8c9b9a4c7c325:0x55e7604c0fa3d25d!8m2!3d51.2330037!4d6.8264586!16s%2Fg%2F11stcstz25?entry=ttu
+# Social Link
+facebook_link: http://www.facebook.com
+twitter_link: http://www.twitter.com
+linkedin_link: http://www.linkedin.com
+googleplus_link: http://plus.google.com
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
+
+# languages
+languages: [en, de]
+default_lang: de
+defaults:
+  - scope:
+      path: en # an empty string here means all files in the project
+      types: pages
+    values:
+      lang: en
+  - scope:
+      path: de
+      types: pages
+    values:
+      lang: de
+
+exclude:
+  - README.md
+  - LICENSE

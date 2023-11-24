@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="360"
+   height="80"
+   viewBox="0 0 95.249997 21.166667"
+   version="1.1"
+   id="svg1048"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="Logo_ALCiDES_with_text_14032023.svg"
+   inkscape:export-filename="Logo_ALCiDES_with_text_plain.svg"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1050"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="2.8284272"
+     inkscape:cx="169.52885"
+     inkscape:cy="51.088464"
+     inkscape:window-width="3366"
+     inkscape:window-height="1376"
+     inkscape:window-x="74"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     inkscape:pageshadow="2" />
+  <defs
+     id="defs1045" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none"
+       id="rect1104"
+       width="21.166666"
+       height="21.166666"
+       x="5e-07"
+       y="5e-07" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none"
+       id="rect2511"
+       width="21.109507"
+       height="3.7041657"
+       x="-5.184236"
+       y="13.081" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none"
+       id="rect2567"
+       width="2.8442709"
+       height="20.686441"
+       x="13.081"
+       y="-7.4572763" />
+    <circle
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none"
+       id="path2621"
+       cx="7.4242082"
+       cy="16.933332"
+       r="3.7041662" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.14392px;font-family:'Microsoft YaHei';-inkscape-font-specification:'Microsoft YaHei Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0"
+       x="58.408909"
+       y="13.138472"
+       id="text7269"><tspan
+         sodipodi:role="line"
+         id="tspan7267"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.14392px;font-family:'Microsoft YaHei';-inkscape-font-specification:'Microsoft YaHei Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke-width:0"
+         x="58.408909"
+         y="13.138472">ALCiDES Robotics</tspan></text>
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0"
+       id="rect2516"
+       width="9.5907078"
+       height="2.8442695"
+       x="15.875001"
+       y="13.940896" />
+  </g>
+</svg>
