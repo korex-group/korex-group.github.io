@@ -192,4 +192,4 @@ cc.run({
 });
 
 // Set theme to alcides
-document.body.classList.toggle('c_alcides');
+document.body.classList.toggle('c_korex');
