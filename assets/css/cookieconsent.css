@@ -23,11 +23,11 @@
     --cc-webkit-scrollbar-bg-hover: #9199a0;
 }
 
-/** Alcides color-scheme **/
-.c_alcides{
+/** korex color-scheme **/
+.c_korex{
     --cc-bg: #fff;
-    --cc-text: #0565B3;
-    --cc-btn-primary-bg: #0565B3;
+    --cc-text: black;
+    --cc-btn-primary-bg: black;
     --cc-btn-primary-text: var(--cc-bg);
     --cc-btn-primary-hover-bg: #1d2e38;
     --cc-btn-secondary-bg: #eaeff2;

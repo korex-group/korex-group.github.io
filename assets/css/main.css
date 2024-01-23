@@ -9,7 +9,7 @@ Bootstrap v5.2.0-beta1 (https://getbootstrap.com/)
 * ==========================================================================
 */
 :root {
-    --korex: #0565B3;
+    --korex: black;
     --marker1_top: 50%;
     --marker1_left: 70%;
     --marker2_top: 62%;
@@ -507,9 +507,28 @@ a:hover {
 
 .carousel-caption .carousel-title {
     /* color: var(--korex); */
-    font-size: 3rem;
+    font-size: 4rem;
+}
+.carousel-caption .carousel-texts {
+    /* color: var(--korex); */
+    font-size: 1rem;
+    font-weight: normal;
+    width: 60%;
+    margin: auto;
+
 }
 
+.carousel-caption .btn-primary {
+    margin-top: 1.5rem;
+    background: var(--korex);
+    color: white !important;
+    font-size: 1.2rem;
+}
+.carousel-caption a:hover {
+    color: white !important;
+    text-decoration: none;
+    background-color: rgb(85, 85, 85);
+}
 @media (min-width: 768px) and (max-width: 1199px) {
     .carousel-caption {
         font-size: 12px;

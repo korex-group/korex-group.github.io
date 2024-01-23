@@ -13,6 +13,9 @@ en:
   privacy_policy: privacy policy
   lang_code: EN
   flag: uk
+  carousel-title-1: Für Erfolg gebaut
+  carousel-texts-1: >
+    Eine gute Bauweise allein macht noch keine gute Maschine. Sie sollte beständig und zuverlässig sein und dabei ihr Leben leichter machen. Unsere Arbeiten erfüllen diesen Anspruch.
   append: /en
   phone: Phone
   fax: Fax
@@ -120,9 +123,9 @@ en:
 de:
   home: startseite
   products: produkte
-  services: Leistungen
+  services: Dienstleistungen
   contact: Kontakt
-  about: Über uns
+  about: Team
   company: Unternehmen
   slogan: KOREX
   links: Links
@@ -131,6 +134,9 @@ de:
   privacy_policy: Datenschutzerklärung
   lang_code: DE
   flag: de
+  carousel-title-1: Für Erfolg gebaut
+  carousel-texts-1: >
+    Eine gute Bauweise allein macht noch keine gute Maschine. Sie sollte beständig und zuverlässig sein und dabei ihr Leben leichter machen. Unsere Arbeiten erfüllen diesen Anspruch.
   append: /de
   phone: Telefon
   fax: Fax
