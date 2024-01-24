@@ -95,6 +95,8 @@ a:hover {
 
 .section-wrapper .content-block {
     margin-bottom: 50px;
+    width: 75%;
+    margin: auto;
 }
 
 .section-wrapper .content-block .content-block-title {
@@ -111,9 +113,22 @@ a:hover {
 
 .section-wrapper .content-block .content-block-body {
     margin-bottom: 15px;
-    font-size: 20px;
+    font-size: 1rem;
+    font-weight: normal;
+    text-align: center !important;
 }
 
+.content-block .btn-primary {
+    margin-top: 1.5rem;
+    background: white;
+    color: black !important;
+    font-size: 1rem;
+}
+#profile a:hover {
+    color: black !important;
+    text-decoration: none;
+    background-color: rgb(170, 168, 168) !important;
+}
 
 @media (max-width: 767px) {
     .section-wrapper {
@@ -133,12 +148,19 @@ a:hover {
 * Profile
 * ==========================================================================
 */
+#profile {
+    background-color: black;
+    color: white;
+}
 .feature-entry {
     background-color: white;
     padding-top: 20px;
     padding-bottom: 10px;
     margin-bottom: 20px;
-    text-align: left;
+    margin: auto;
+    text-align: center;
+    width: 60%;
+    height: 300px;
 }
 
 .feature-entry .feature-icon {
@@ -496,6 +518,15 @@ a:hover {
 * Carousel
 * ==========================================================================
 */
+#carousel-motivation-vision .carousel-control-prev, .carousel-control-next {
+    filter: invert(100%); 
+}
+#carousel-motivation-vision .carousel-item {
+    height: 350px;
+}
+#carousel-motivation-vision .carousel-indicators {
+    bottom: -30px;
+}
 .carousel-caption {
     /* color: var(--korex) !important; */
     color: white;
@@ -520,14 +551,14 @@ a:hover {
 
 .carousel-caption .btn-primary {
     margin-top: 1.5rem;
-    background: var(--korex);
-    color: white !important;
-    font-size: 1.2rem;
+    background: white;
+    color: black !important;
+    font-size: 1rem;
 }
 .carousel-caption a:hover {
-    color: white !important;
+    color: black !important;
     text-decoration: none;
-    background-color: rgb(85, 85, 85);
+    background-color: rgb(170, 168, 168);
 }
 @media (min-width: 768px) and (max-width: 1199px) {
     .carousel-caption {
@@ -561,9 +592,9 @@ a:hover {
 */
 
 footer {
-    background: black;
+    background: white;
     padding-top: 20px;
-    color: white;
+    color: black;
 }
 
 footer h3 {
@@ -572,8 +603,8 @@ footer h3 {
 }
 
 footer a:hover {
-    color: white !important;
     text-decoration: none;
+    color: rgb(170, 168, 168) !important;
 }
 
 footer .btn-group {
