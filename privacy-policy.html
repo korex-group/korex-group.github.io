@@ -43,7 +43,7 @@
     <!-- SEO tags -->
     <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>KOREX | KOREX - Baumanangement und Projektmanagement richting gemacht</title>
-<meta name="generator" content="Jekyll v4.3.3" />
+<meta name="generator" content="Jekyll v4.3.2" />
 <meta property="og:title" content="KOREX" />
 <meta property="og:locale" content="de" />
 <meta name="description" content="KOREX - Baumanangement und Projektmanagement richting gemacht" />
@@ -123,31 +123,12 @@
                 </li>
                 -->
                 <li class="nav-item">
-                    <a class="nav-link" href="https://korex-group.github.io/about">Über uns</a>
+                    <a class="nav-link" href="https://korex-group.github.io/about">Team</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="https://korex-group.github.io/contact">Kontakt</a>
                 </li>
                 <!-- Dropdown language selector
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle dropdown-item" href="https://korex-group.github.io"
-                        id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
-                        aria-expanded="false">
-                        <i class="flag flag-de"></i> de
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        
-                        
-                        
-                        <li><a class="dropdown-item" href="https://korex-group.github.io/en"><i
-                                    class="flag flag-uk"></i>EN</a></li>
-                        
-                        
-                        
-                        
-                    </ul>
-                </li>
-                -->
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle dropdown-item" href="/privacy-policy" id="navbarLangSelector"
                         role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -165,8 +146,9 @@
                     </ul>
                 </li>
             </ul>
-            <!-- Search bar -->
-            <!--
+            -->
+                <!-- Search bar -->
+                <!--
       <form class="d-flex" role="search">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-success" type="submit">Search</button>
@@ -177,7 +159,6 @@
 </nav>
 
 <!-- End Header -->
-
 <!-- BEGIN Scripts -->
 <script type="text/javascript" src="https://korex-group.github.io/assets/js/jquery-3.6.0.js"></script>
 <script src="https://korex-group.github.io/assets/bootstrap/js/bootstrap.bundle.js"></script>
@@ -253,6 +234,13 @@ jQuery(function($) {
     }
   });
 });
+</script>
+<!-- Update copyright year automatically -->
+<script>
+  $(function($) {
+    var date = new Date().getFullYear();
+    document.getElementById("copyright-year").innerHTML = date;
+  });
 </script>
 <!-- End Scripts -->
 
@@ -919,7 +907,7 @@ jQuery(function($) {
         <div class="row text-center">
             <div class="col-md-12">
                 <p class="copyright text-center"></p>
-                &copy; Copyright 2023 &nbsp; <a href="https://korex-group.github.io">KOREX Group</a>
+                &copy; Copyright <span id="copyright-year"></span> &nbsp; <a href="https://korex-group.github.io">KOREX Group</a>
                 </p>
             </div>
         </div>
