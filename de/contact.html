@@ -36,8 +36,12 @@ reference: contact
     -->
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="{{ site.url }}{{ site.baseurl }}/assets/img/korex/background_banner1.jpg" class="d-block w-100"
+        <img src="{{ site.url }}{{ site.baseurl }}/assets/img/korex/contact_banner.jpg" class="d-block img-fluid w-100"
           alt="slide-1">
+        <div class="carousel-caption d-md-block">
+          <p class="carousel-title">{{ site.data.locales[page.lang].contact_title }}</p>
+          <p class="carousel-texts">{{ site.data.locales[page.lang].contact_texts }}</p>
+        </div>
       </div>
       <!--
       <div class="carousel-item"> <img src="{{ site.url }}{{ site.baseurl }}/assets/img/slider/alcides/slide2.jpeg"
@@ -81,8 +85,7 @@ reference: contact
           <p>40235 Düsseldorf</p>
           <p>Deutschland</p>
         </em>
-        <p>{{ site.data.locales[page.lang].phone }}: 0049 (0) 12345</p>
-        <p>{{ site.data.locales[page.lang].fax }}: 0049 (0) 12345</p>
+        <p>{{ site.data.locales[page.lang].phone }}: +49 1766196822</p>
         <p><em><strong>{{ site.data.locales[page.lang].email }}: info@korex.group</strong></em></p>
         <br>
       </div>
@@ -92,7 +95,7 @@ reference: contact
       <div class="col-lg-8 contact-block" id="contact_form">
         <h3>{{ site.data.locales[page.lang].contact_form }}</h3>
         <form action="https://api.web3forms.com/submit" method="POST" class="needs-validation">
-          <input type="hidden" name="access_key" value="xxxx">
+          <input type="hidden" name="access_key" value="696576ed-1f7c-47a3-bbbb-70bdfdb1d389">
           <fieldset>
             <div class="form-group">
               <label for="name" class="control-label">{{ site.data.locales[page.lang].name }} *</label>

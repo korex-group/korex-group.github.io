@@ -37,7 +37,7 @@ en:
   contact_form_agreement_4: "the privacy_policy"
   contact_form_agreement_5: "."
   learn_more: Learn more
-  query_text_1: Treten Sie ein in die Welt von KOREX – wo Baumanagement und Projektmanagement zu einer inspirierenden Reise werden.  
+  query_text_1: Treten Sie ein in die Welt von KOREX – wo Baumanagement und Projektmanagement zu einer inspirierenden Reise werden.
   query_text_2: Wir freuen uns darauf, Ihre Visionen Wirklichkeit werden zu lassen.
   query_text_3: Kontaktiere uns jetzt
   about_us_text: >
@@ -47,7 +47,7 @@ en:
     Was uns antreibt, geht über das bloße Baumanagement hinaus. Wir sind davon überzeugt, dass jedes Bauprojekt eine einzigartige Chance bietet, Lebensräume zu schaffen und positive Veränderungen zu bewirken. Die Leidenschaft für das, was wir tun, spiegelt sich in unserem Engagement für Qualität, Effizienz und Nachhaltigkeit wider. Bei KOREX gehen wir über die bloße Erfüllung von Bauprojekten hinaus – wir schaffen Werke, die Gemeinschaften stärken und Zukunft gestalten.
   vision: Our vision
   mission_text: >
-    Unsere Vision ist es, Maßstäbe im Baumanagement und Projektmanagement zu setzen. Wir streben danach, durch innovative Lösungen und nachhaltige Praktiken einen positiven Einfluss auf die Baubranche auszuüben. KOREX sieht sich nicht nur als Dienstleister, sondern als Partner, der gemeinsam mit Kunden auf eine erfolgreiche und zukunftsorientierte Reise geht. Wir träumen von Städten, die durchdacht und nachhaltig gebaut sind, von Projekten, die Geschichte schreiben, und von Kunden, die in uns den Schlüssel zu ihrem Bauprojekterfolg sehen. 
+    Unsere Vision ist es, Maßstäbe im Baumanagement und Projektmanagement zu setzen. Wir streben danach, durch innovative Lösungen und nachhaltige Praktiken einen positiven Einfluss auf die Baubranche auszuüben. KOREX sieht sich nicht nur als Dienstleister, sondern als Partner, der gemeinsam mit Kunden auf eine erfolgreiche und zukunftsorientierte Reise geht. Wir träumen von Städten, die durchdacht und nachhaltig gebaut sind, von Projekten, die Geschichte schreiben, und von Kunden, die in uns den Schlüssel zu ihrem Bauprojekterfolg sehen.
   services_text: >
     __Projektmanagement__:
 
@@ -65,9 +65,9 @@ en:
     - Integration von nachhaltigen Baupraktiken in Planung und Ausführung.
 
     - Implementierung umweltfreundlicher Technologien und Materialien.
-    
+
     - Beratung zu Zertifizierungen und Umweltauswirkungen.
-    
+
     - Bauphysikalische Beratung
 
 
@@ -80,23 +80,23 @@ en:
     - Koordination von Baugenehmigungen und behördlichen Angelegenheiten.
 
     - Technische und konstruktive Bewertung von Konstruktionen 
-    
+
 
     __Bauausführung und Überwachung__:
 
     - Umsetzung von Bauprojekten unter Einhaltung höchster Qualitätsstandards.
-    
+
     - Kontinuierliche Bauüberwachung für termingerechte Fertigstellung.
 
     - Effizientes Ressourcenmanagement und Kostenkontrolle.
-    
+
 
     __Qualitätskontrolle und -sicherung__:
 
     - Umfassende Qualitätsprüfung während aller Bauphasen.
 
     - Implementierung von Qualitätsstandards und -richtlinien.
-    
+
     - Einsatz modernster Technologien zur Qualitätssicherung.
 
 
@@ -126,6 +126,7 @@ de:
   services: Dienstleistungen
   contact: Kontakt
   about: Über uns
+  team: Team
   company: Unternehmen
   slogan: KOREX
   links: Links
@@ -142,7 +143,7 @@ de:
   fax: Fax
   email: E-Mail
   find_us_at: Finden Sie uns unter
-  contact_form: Kontaktformular
+  contact_form: Möchten Sie mehr erfahren?
   name: Name
   phone_number: Telefonnummer
   message: Nachricht
@@ -158,86 +159,59 @@ de:
   contact_form_agreement_4: "der Datenschutzrichtlinie "
   contact_form_agreement_5: "zu."
   learn_more: Mehr erfahren
-  query_text_1: Treten Sie ein in die Welt von KOREX – wo Baumanagement und Projektmanagement zu einer inspirierenden Reise werden.  
+  query_text_1: Treten Sie ein in die Welt von KOREX – wo Baumanagement und Projektmanagement zu einer inspirierenden Reise werden.
   query_text_2: Wir freuen uns darauf, Ihre Visionen Wirklichkeit werden zu lassen.
   query_text_3: Kontaktiere uns jetzt
   about_us_text: >
     KOREX ist ein Unternehmen im Bereich Baumanagement und Projektmanagement. Mit jahrelanger Erfahrung und einem engagierten Team von Experten bieten wir umfassende Dienstleistungen für Bauvorhaben unterschiedlichster Größenordnungen. Unser Fokus liegt darauf, die Visionen unserer Kunden in erfolgreiche Projekte zu verwandeln. Von der Planung bis zur Fertigstellung – wir stehen Ihnen als zuverlässiger Partner zur Seite.
   motivation: Unsere Motivation
   motivation_text: >
-    Was uns antreibt, geht über das bloße Baumanagement hinaus. Wir sind davon überzeugt, dass jedes Bauprojekt eine einzigartige Chance bietet, Lebensräume zu schaffen und positive Veränderungen zu bewirken. Die Leidenschaft für das, was wir tun, spiegelt sich in unserem Engagement für Qualität, Effizienz und Nachhaltigkeit wider. Bei KOREX gehen wir über die bloße Erfüllung von Bauprojekten hinaus – wir schaffen Werke, die Gemeinschaften stärken und Zukunft gestalten.
+    Unsere Motivation geht über reines Baumanagement hinaus. Jedes Projekt ist für uns eine Chance, einzigartige Lebensräume zu schaffen. Unsere Leidenschaft für Qualität, Effizienz und Nachhaltigkeit prägt unser Engagement. Bei KOREX gestalten wir nicht nur Bauprojekte, sondern Werke, die Gemeinschaften stärken und die Zukunft formen.
   vision: Unsere Vision
   vision_text: >
-    Unsere Vision ist es, Maßstäbe im Baumanagement und Projektmanagement zu setzen. Wir streben danach, durch innovative Lösungen und nachhaltige Praktiken einen positiven Einfluss auf die Baubranche auszuüben. KOREX sieht sich nicht nur als Dienstleister, sondern als Partner, der gemeinsam mit Kunden auf eine erfolgreiche und zukunftsorientierte Reise geht. Wir träumen von Städten, die durchdacht und nachhaltig gebaut sind, von Projekten, die Geschichte schreiben, und von Kunden, die in uns den Schlüssel zu ihrem Bauprojekterfolg sehen. 
-  services_text: >
-    __Projektmanagement__:
-
+    KOREX setzt Standards im Baumanagement und Projektmanagement, strebt durch Innovation und Nachhaltigkeit einen positiven Einfluss auf die Baubranche an. Als Partner auf einer gemeinsamen, zukunftsorientierten Reise träumen wir von durchdachten, nachhaltigen Bauwerken, wegweisenden Projekten und Kunden, die in uns den Schlüssel zum Erfolg sehen.
+  services_title: Unsere Dienstleistungen
+  services_texts: KOREX bietet für Ihre Bauprojekte vielfältige und kundenorientierte Bauleistungen unter Einhaltung höchster Standards an.
+  project_management: Projektmanagement
+  project_management_items: >
     - Ganzheitliches Projektmanagement von Anfang bis Ende.
 
     - Teamkoordination und Kommunikation für reibungslosen Ablauf.
 
-    - Einsatz moderner Projektmanagementtools für optimale Effizienz.
+    - Überwachung der Kostenentwicklung und Budgeterstellung während des gesamten Projekts.
 
-    - Wirtschaftlichkeitsberechnungen und Erstellung von Budgets 
+    - Identifizierung von Einsparungspotenzialen ohne Kompromisse bei der Qualität.
+  project_planning: Bauprojektplanung
+  project_planning_items: >
+    - Erstellung der Bau- und Bauzeitpläne.
 
-
-    __Nachhaltigkeit und Umweltverträglichkeit__:
-
-    - Integration von nachhaltigen Baupraktiken in Planung und Ausführung.
-
-    - Implementierung umweltfreundlicher Technologien und Materialien.
-    
-    - Beratung zu Zertifizierungen und Umweltauswirkungen.
-    
-    - Bauphysikalische Beratung
-
-
-    __Bauprojektplanung__:
-
-    - Erstellung detaillierter Baupläne und Zeitpläne.
-
-    - Analyse von Risiken und Entwicklung von Risikomanagementstrategien.
+    - Entwicklung von Risikomanagementstrategien.
 
     - Koordination von Baugenehmigungen und behördlichen Angelegenheiten.
 
-    - Technische und konstruktive Bewertung von Konstruktionen 
-    
+    - Technische und wirtschaftliche Bewertung von Bauplanung. 
 
-    __Bauausführung und Überwachung__:
-
+    - Energetische Beratung und klimafreundliche Baukonzepte.
+  construction_supervision: Bauausführung und Überwachung
+  construction_supervision_items: >
     - Umsetzung von Bauprojekten unter Einhaltung höchster Qualitätsstandards.
-    
+
     - Kontinuierliche Bauüberwachung für termingerechte Fertigstellung.
 
     - Effizientes Ressourcenmanagement und Kostenkontrolle.
-    
-
-    __Qualitätskontrolle und -sicherung__:
-
+  quality_control: Qualitätskontrolle und -sicherung
+  quality_control_items: >
     - Umfassende Qualitätsprüfung während aller Bauphasen.
 
     - Implementierung von Qualitätsstandards und -richtlinien.
-    
+
     - Einsatz modernster Technologien zur Qualitätssicherung.
-
-
-    __Kosten- und Budgetmanagement__:
-
-    - Transparente Kostenkalkulation und Budgeterstellung.
-
-    - Überwachung der Kostenentwicklung während des gesamten Projekts.
-
-    - Identifizierung von Einsparungspotenzialen ohne Kompromisse bei der Qualität.
-
-
-    __Kundenbetreuung und Kommunikation__:
-
-    - Enger Austausch mit Kunden für klare Kommunikation und Verständnis.
-
-    - Regelmäßige Updates und Berichte über den Projektfortschritt.
-
-    - Kundenzufriedenheit als oberstes Ziel.
-
   services_summary: >
     KOREX ist Ihr vertrauenswürdiger Partner im Baumanagement und Projektmanagement, der durch umfassende Fachkenntnisse, effiziente Prozesse und nachhaltige Lösungen den Erfolg Ihrer Bauprojekte gewährleistet.
-  team: Unser Team
+  team_title: Unser Team
+  team_texts: >
+    Das Team des KOREX ist seit seiner Gründung 2023 stetig gewachsen und beschäftigt inzwischen Fachleute mit Hintergrund in Architektur, Bauingenieurwesen und Bauphysik, die übergreifend in den Bereichen Entwicklung, Planung, Beratung, Ausführung und Betrieb der Bauprojekte tätig sind.
+  contact_person: Ansprechpartner
+  contact_title: Kontakt
+  contact_texts: >
+    Sie möchten einen Termin buchen, eine Frage stellen oder mit uns über eine mögliche Zusammenarbeit sprechen? Unser Team hilft Ihnen jederzeit gerne weiter - nehmen Sie einfach Kontakt zu uns auf!

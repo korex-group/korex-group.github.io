@@ -4,9 +4,9 @@ permalink: /about
 published: true
 reference: about
 ---
-<!-- Begin #carousel-section-products -->
-<section id="carousel-section-contact">
-  <div id="carousel-products" class="carousel slide" data-bs-ride="false">
+<!-- Begin #carousel-section-team -->
+<section id="carousel-section-team">
+  <div id="carousel-team" class="carousel slide" data-bs-ride="false">
     <!--
     <div class="carousel-indicators"> <button type="button" data-bs-target="#carousel-products" data-bs-slide-to="0"
         class="active" aria-current="true" aria-label="Slide 1"></button> <button type="button"
@@ -16,8 +16,14 @@ reference: about
     -->
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="{{ site.url }}{{ site.baseurl }}/assets/img/korex/background_banner5.jpg" class="d-block w-100"
+        <img src="{{ site.url }}{{ site.baseurl }}/assets/img/korex/team_banner.jpg" class="d-block img-fluid w-100"
           alt="slide-1">
+        <div class="carousel-caption d-md-block">
+          <p class="carousel-title">{{ site.data.locales[page.lang].team_title }}</p>
+          <p class="carousel-texts">{{ site.data.locales[page.lang].team_texts }}</p>
+          <a class="d-none d-md-block btn btn-primary" href="{{ site.url }}{{ site.baseurl }}/about#team">{{
+            site.data.locales[page.lang].learn_more }}</a>
+        </div>
       </div>
       <!--
       <div class="carousel-item"> <img src="{{ site.url }}{{ site.baseurl }}/assets/img/slider/alcides/slide2.jpeg"
@@ -45,35 +51,24 @@ reference: about
     </button>
     -->
   </div>
-</section> <!-- End #carousel-section-contact -->
-<!-- Begin #company-section -->
-<section id="company" class="section-wrapper">
+</section> <!-- End #carousel-section-team -->
+<!-- Begin #team-section -->
+<section id="team" class="section-wrapper">
   <div class="container">
-    <!-- Begin About Us Row -->
-    <div class="row">
-      <div class="content-block">
-        <div class="content-block-title">
-          {{ site.data.locales[page.lang].about }}
-        </div>
-        <div class="row text-start content-block-body">
-          <div class="col-md-12">
-            {{ site.data.locales[page.lang].about_us_text}}
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- End About US Row -->
     <!-- Begin Team Row-->
     <div class="row">
       <div class="content-block">
-        <div class="content-block-title">
-          {{ site.data.locales[page.lang].team }}
+        <div class="content-block-title text-start">
+          {{ site.data.locales[page.lang].contact_person }}
+          <br>
+          <br>
         </div>
         <div class="row content-block-body">
-          <div class="col-md-12">
+          <div class="col-md-6">
             <div class="team-member-entry">
               <span class="d-inline-block text-start">
-              <h4> <strong>Wilhelm Krieger</strong></h4>
+                <h4> <strong>Wilhelm Krieger</strong></h4>
+                <br>
                 <p> Mit mehreren Jahren fundierter Berufserfahrung in der Tragwerksplanung, Bauphysik und Konstruktion
                   verfüge ich über umfassende Kenntnisse in der Planung und Umsetzung von Bauprojekten. Meine Expertise
                   erstreckt sich zudem auf die Risiko- und Immobilienbewertung sowie die Kalkulation, sowohl aus der
@@ -82,13 +77,22 @@ reference: about
                   Lösungen lege. Mit einer breiten Erfahrung in den Bereichen Instandhaltung und Lebenszyklusmanagement
                   von Immobilien bin ich darauf spezialisiert, den Erfolg und die Langlebigkeit Ihrer Bauprojekte
                   sicherzustellen.</p>
+                <p>
+                  <br>
+                  Telefon: +49 1756961241<br>
+                  <strong>E-Mail: info@korex.group</strong>
+                  <br>
+                  <br>
+                  <br>
+                </p>
               </span>
             </div>
           </div>
-          <div class="col-md-12">
+          <div class="col-md-6">
             <div class="team-member-entry">
               <span class="d-inline-block text-start">
                 <h4><strong>Zhe Xu</strong></h4>
+                <br>
                 <p>Mit mehreren Jahren umfassender Berufserfahrung in der Tragwerksplanung, Bauphysik und Konstruktion
                   bringe ich ein tiefgehendes Verständnis für die technischen Aspekte von Bauprojekten mit. Meine
                   Expertise erstreckt sich über die gesamte Bandbreite der Projektentwicklung, von der Planung bis zur
@@ -97,6 +101,14 @@ reference: about
                   Darüber hinaus bin ich aktiv in den Bereichen Energieberatung, Passivhauszertifizierung und
                   Nachhaltigkeit tätig. Meine Leidenschaft für umweltbewusstes Bauen spiegelt sich in meinem Engagement
                   wider, innovative Technologien und nachhaltige Praktiken in Bauprojekte zu integrieren.</p>
+                <p>
+                  <br>
+                  Telefon: +49 17661968622<br>
+                  <strong>E-Mail: info@korex.group</strong>
+                  <br>
+                  <br>
+                  <br>
+                </p>
               </span>
             </div>
           </div>

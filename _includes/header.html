@@ -71,34 +71,13 @@
                 -->
                 <li class="nav-item">
                     <a class="nav-link" href="{{ site.url }}{{ site.baseurl }}{{ append }}/about">{{
-                        site.data.locales[page.lang].about }}</a>
+                        site.data.locales[page.lang].team }}</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{ site.url }}{{ site.baseurl }}{{ append }}/contact">{{
                         site.data.locales[page.lang].contact }}</a>
                 </li>
                 <!-- Dropdown language selector
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle dropdown-item" href="{{ site.url }}{{ site.baseurl }}{{ append }}"
-                        id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
-                        aria-expanded="false">
-                        <i class="flag flag-{{ site.data.locales[page.lang].flag }}"></i> {{ page.lang }}
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        {% for lang in site.languages %}
-                        {% if lang != page.lang %}
-                        {% if lang == site.default_lang %}
-                            {% assign append = "" %}
-                        {% else %}
-                            {% assign append = site.data.locales[lang].append %}
-                        {% endif %}
-                        <li><a class="dropdown-item" href="{{ site.url }}{{ site.baseurl }}{{ append }}"><i
-                                    class="flag flag-{{ site.data.locales[lang].flag }}"></i>{{ lang | upcase }}</a></li>
-                        {% endif %}
-                        {% endfor %}
-                    </ul>
-                </li>
-                -->
                 {%- if site.pages %}
                 <li class="nav-item dropdown">
                     {%- assign node = site.pages | where: "reference", page.reference | sort: 'lang' %}
@@ -146,8 +125,9 @@
                 </li>
                 {%- endif %}
             </ul>
-            <!-- Search bar -->
-            <!--
+            -->
+                <!-- Search bar -->
+                <!--
       <form class="d-flex" role="search">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-success" type="submit">Search</button>
