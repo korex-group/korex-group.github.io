@@ -135,11 +135,13 @@ a:hover {
     .section-wrapper .content-block .content-block-body {
         font-size: 1.25rem;
     }
+
     .content-block .btn-primary {
         margin-top: 1rem;
         font-size: 1rem;
     }
 }
+
 @media (max-width: 767px) {
     .section-wrapper {
         padding-top: 40px;
@@ -153,6 +155,7 @@ a:hover {
     .section-wrapper .content-block .content-block-body {
         font-size: 0.85rem;
     }
+
     .content-block .btn-primary {
         margin-top: 1rem;
         font-size: 0.85rem;
@@ -569,12 +572,13 @@ a:hover {
 
 .carousel-item {
     min-height: 360px;
-  }
+}
 
 .carousel-item img {
     object-fit: cover;
     min-height: 360px;
 }
+
 /*
 #carousel-section-services .carousel-inner{
     max-height: 400px !important;
@@ -649,6 +653,7 @@ a:hover {
         width: 100%;
         font-size: 1.5rem;
     }
+
     .carousel-caption .btn-primary {
         font-size: 1rem;
         width: 25%;
@@ -701,6 +706,32 @@ footer a:hover {
 footer .btn-group {
     font-size: 22px;
     padding-right: 10px;
+}
+
+.copyright {
+    padding-top: 1.5rem;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .imprint {
+        font-size: 1rem;
+    }
+
+    .copyright {
+        font-size: 1rem;
+        padding-top: 1rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .imprint {
+        font-size: 0.85rem;
+    }
+
+    .copyright {
+        font-size: 0.85rem;
+        padding-top: 0.85rem;
+    }
 }
 
 
